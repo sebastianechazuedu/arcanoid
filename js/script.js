@@ -104,17 +104,19 @@ function drawBricks() {
         }
     }
 }
+//funcion para dibujar scorer
 function drawScore() {
     ctx.font = "16px Arial";
     ctx.fillStyle = "#0095DD";
     ctx.fillText("Score: "+score, 8, 20);
 }
+//funcion para dibujar vidas
 function drawLives() {
     ctx.font = "16px Arial";
     ctx.fillStyle = "#0095DD";
     ctx.fillText("Lives: "+lives, canvas.width-65, 20);
 }
-
+//funcion dibujar todo el juego
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawBricks();
